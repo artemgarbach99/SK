@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230224190142">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230224215540">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,8 +34,6 @@
 													<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M1 7L7 1L13 7" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
 													</svg>
-
-													<!-- <img data-src="img/svg/arrow.svg" alt=""> -->
 												</span>
 											</div>
 											<div class="dropmenu-menu__wrapper">
@@ -60,7 +58,8 @@
 							<img data-src="img/svg/phone.png" alt="">
 							+7 (499) 647-44-00
 						</a>
-						<button type="submit" class="header__button">Заказать звонок</button>
+						<a href="#" data-popup="#popup" class="header__button">Заказать звонок</a>
+						<!-- <a href="#" class="main-block__link">Оставить заявку</a> -->
 					</div>
 				</div>
 			</div>
@@ -74,9 +73,10 @@
 								<span>Подготовка заявки</span> <br> на статус резидента
 								«Сколково»
 							</h1>
+							<div class="main-block__links-mob"></div>
 							<a href="" class="main-block__link">Оставить заявку</a>
 						</div>
-						<div class="main-block__links links-main-block">
+						<div data-da=".main-block__links-mob, 768" class="main-block__links links-main-block">
 							<div class="links-main-block__item">
 								<div class="links-main-block__arrow">
 									<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,7 +126,7 @@
 								<a href="#" class="links-main-block__lable">Кейсы?</a>
 							</div>
 						</div>
-						<a href="" class="main-block__link _mob">Оставить заявку</a>
+						<!-- <a href="" class="main-block__link _mob">Оставить заявку</a> -->
 					</div>
 				</div>
 			</section>
@@ -347,19 +347,57 @@
 			</div>
 		</footer>
 	</div>
-	<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-			</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<form action="#" class="popup__content">
+				<div class="popup__top">
+					<button data-close type="button" class="popup__close"></button>
+				</div>
+				<!-- <form action="#" class="popup__form"> -->
+				<div class="popup__inner">
+					<span class="popup__title h3">Заказать звонок</span>
+					<div class="popup__input">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="+7 (___) ___-__-__">
+					</div>
+					<button type="submit" class="popup__button">Оставить заявку</button>
+					<p class="popup__text">Нажимая кнопку «Оставить заявку», Вы даете свое согласие
+						на
+						обработку
+						<a href="" class="popup__link">персональных данных.</a>
+					</p>
+				</div>
+				<!-- <div class="form__body">
+						<h3 class="form__lable">Получите бесплатную консультацию</h3>
+						<div class="form__content">
+							<div class="form__inputs">
+								<div class="form__input">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+										placeholder="Как вас зовут?">
+								</div>
+								<div class="form__input">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+										placeholder="+7 (___) ___-__-__">
+								</div>
+								<div class="form__input">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+										placeholder="Ваш e-mail">
+								</div>
+							</div>
+							<div class="form__buttons">
+								<button type="submit" class="form__button">Оставить заявку</button>
+								<p class="form__text">Нажимая кнопку «Оставить заявку», Вы даете свое согласие
+									на
+									обработку
+									<a href="" class="form__link">персональных данных.</a>
+								</p>
+							</div>
+						</div>
+					</div> -->
+				<!-- </form> -->
+			</form>
 		</div>
 	</div>
-</div>
- -->
-
-	<script src="js/app.min.js?_v=20230224190142"></script>
+	<script src="js/app.min.js?_v=20230224215540"></script>
 </body>
 
 </html>
